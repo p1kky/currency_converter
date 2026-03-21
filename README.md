@@ -1,6 +1,6 @@
 # 💱 Currency Converter
 
-A simple command-line tool for converting currencies quickly and удобно прямо из терминала.
+A simple command-line tool for converting currencies quickly and easy directly from terminal.
 
 ---
 
