@@ -32,6 +32,7 @@ def get_amount(user_currency_from):
 
             return amount
         except (ValueError, IndexError):
+            print("Incorrect parameters")
             continue
 
 
@@ -59,7 +60,9 @@ def main():
     result = convert(amount, currencies_from_to)
 
     print("\n" + "-*- " * 4 + "Currency converter" + " -*-" * 4)
-    print(f"Convert successful! Result = {result} {currencies_from_to[1].upper()}")
+    print(
+        f"Convert successful! {amount} {currencies_from_to[0].upper()} = {result} {currencies_from_to[1].upper()}"
+    )
 
 
 if __name__ == "__main__":
