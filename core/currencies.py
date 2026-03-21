@@ -1,5 +1,5 @@
-from provide_rates import RatesProvider
-from currency import Currency
+from services.provide_rates import RatesProvider
+from core.currency import Currency
 
 provider = RatesProvider()
 rates = provider.get_rates()

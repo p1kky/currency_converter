@@ -1,4 +1,4 @@
-from currencies import currencies_dict
+from core.currencies import currencies_dict
 
 
 def get_converting_currencies():
