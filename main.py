@@ -59,7 +59,7 @@ def main():
     result = convert(amount, currencies_from_to)
 
     print("\n" + "-*- " * 4 + "Currency converter" + " -*-" * 4)
-    print(f"Convert successful! Result = {result.upper()} {currencies_from_to[1]}")
+    print(f"Convert successful! Result = {result} {currencies_from_to[1].upper()}")
 
 
 if __name__ == "__main__":
