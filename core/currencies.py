@@ -4,6 +4,10 @@ from core.currency import Currency
 provider = RatesProvider()
 rates = provider.get_rates()
 
+if rates is None:
+    print("ERROR: Cannot get exchange rates.")
+    exit()
+
 usd = Currency("usd", rates["USD"])
 eur = Currency("eur", rates["EUR"])
 rub = Currency("rub", rates["RUB"])

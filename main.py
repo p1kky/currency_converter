@@ -12,6 +12,12 @@ def get_converting_currencies():
             .split()
         )
 
+        if convert_from_to[0] == "exit":
+            print("\n" + "-*- " * 4 + "Currency converter" + " -*-" * 4)
+            print("Exiting the program..")
+
+            exit()
+
         if len(convert_from_to) != 2:
             print("Incorrect parameters")
             continue
@@ -51,18 +57,22 @@ def convert(amount, cur_from_to):
 
 
 def main():
-    print("\n" + "-*- " * 4 + "Currency converter" + " -*-" * 4)
-    print("Currently available currencies:\n - USD\n - EUR\n - RUB\n - BYN\n - KZT ")
+    while True:
+        print("\n" * 3 + "-*- " * 4 + "Currency converter" + " -*-" * 4)
+        print(
+            "Currently available currencies:\n - USD\n - EUR\n - RUB\n - BYN\n - KZT "
+        )
+        print("Enter 'exit' to leave the program")
 
-    currencies_from_to = get_converting_currencies()
-    amount = get_amount(currencies_from_to[0])
+        currencies_from_to = get_converting_currencies()
+        amount = get_amount(currencies_from_to[0])
 
-    result = convert(amount, currencies_from_to)
+        result = convert(amount, currencies_from_to)
 
-    print("\n" + "-*- " * 4 + "Currency converter" + " -*-" * 4)
-    print(
-        f"Convert successful! {amount} {currencies_from_to[0].upper()} = {result} {currencies_from_to[1].upper()}"
-    )
+        print("\n" + "-*- " * 4 + "Currency converter" + " -*-" * 4)
+        print(
+            f"Convert successful! {amount} {currencies_from_to[0].upper()} = {result} {currencies_from_to[1].upper()}"
+        )
 
 
 if __name__ == "__main__":
