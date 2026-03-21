@@ -16,7 +16,7 @@ def get_converting_currencies():
             print("Incorrect parameters")
             continue
 
-        if any(i not in ("usd", "eur", "rub", "byn", "tg") for i in convert_from_to):
+        if any(i not in ("usd", "eur", "rub", "byn", "kzt") for i in convert_from_to):
             print("Incorrect parameters")
             continue
 
@@ -51,7 +51,7 @@ def convert(amount, cur_from_to):
 
 def main():
     print("\n" + "-*- " * 4 + "Currency converter" + " -*-" * 4)
-    print("Currently available currencies:\n - USD\n - EUR\n - RUB\n - BYN\n - TG ")
+    print("Currently available currencies:\n - USD\n - EUR\n - RUB\n - BYN\n - KZT ")
 
     currencies_from_to = get_converting_currencies()
     amount = get_amount(currencies_from_to[0])
