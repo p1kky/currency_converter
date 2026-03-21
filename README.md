@@ -9,7 +9,7 @@ A simple command-line tool for converting currencies quickly and удобно п
 - Convert between different currencies
 - Fast and lightweight CLI interface
 - Easy to use — no complicated setup
-- Real-time or fixed exchange rates (depending on implementation)
+- Real-time exchange rates
 
 ---
 
