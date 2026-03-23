@@ -216,3 +216,6 @@ __marimo__/
 .streamlit/secrets.toml
 
 todo.md
+.DS_Store
+core/.DS_Store
+services/.DS_Store
