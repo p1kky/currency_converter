@@ -19,6 +19,7 @@ A simple command-line tool for converting currencies quickly and easy directly f
 
 ```bash
 git clone https://github.com/your-username/currency-converter.git
+cd currency-converter
 python3 main.py
 ```
 
